@@ -1,0 +1,59 @@
+How to Create a User Account in the Microsoft 365 Admin Center
+Prerequisites
+
+    You must have admin permissions in the Microsoft 365 Admin Center to create user accounts.
+
+Steps to Create a User Account
+1. Sign In to Microsoft 365 Admin Center
+
+    Open a web browser and go to the Microsoft 365 Admin Center.
+    Sign in with your admin account credentials.
+
+2. Navigate to the Users Section
+
+    In the left-hand navigation pane, select Users.
+    Under Users, click on Active users.
+
+3. Add a New User
+
+    At the top of the Active users page, click on + Add a user.
+    Fill in the user's information:
+        First name: Enter the user's first name.
+        Last name: Enter the user's last name.
+        Display name: This will be automatically populated based on the first and last name but can be edited.
+        Username: Enter the username. This will be the user's first initial followed by their full last name (e.g., FLastName@example.com).
+
+4. Set the Password
+
+    Automatically create a password
+    Keep "Require this user to change their password when they first sign in" checked
+    Send the password to the user's manager and yourself incase the user's manager is not in on that day
+
+5. Assign Licenses
+
+    Assign the user at least an Office 365 E3 license AND a Microsoft 365 Business Voice (US) license.  If none are available you may purchase the license.
+
+6. Review and Finish O365 section
+
+    Review the information you have entered.
+    Click Add at the bottom of the page to create the user account.
+
+7. Log into Azure
+
+  Log into portal.azure.com with your admin account credentials.
+
+8. Navigate to Microsoft Entra ID and to the new user
+
+    On the top of the screen, select the search bar and type "Microsoft Entra ID"
+    On the left-hand side, select "Users" and locate the new user made
+
+9. Edit the new user's properties to match their information
+
+    Above the user's basic information, select "Edit properties" and select the tab "Job Information"
+    Under department, type in the user's respective department matching the user's manager  ###THIS IS FOR DYNAMIC ENTRA ID GROUPS.  SPELLING AND CAPITALIZATION MATTERS
+    Under employee ID, type the whether the user is full_time, temp, or manager  ###THIS IS DUE TO HOW DYNAMIC ENTRA ID GROUPS WORK AS "Employee type" IS NOT SUPPORTED AT THIS TIME
+
+10. Review the information
+
+    Review the information and verify that it is correct and select Save.
+    
