@@ -44,7 +44,7 @@ Steps to Create an Azure Runbook
     Powershell:
 ###This starts the example load balancer in an example subscription.###
 
-```
+```powershell
 ###Connect to Azure
 Connect-AzAccount -Identity
 ###Select the Azure Subscription named app-development-001
@@ -54,6 +54,7 @@ $AppGw = Get-AzApplicationGateway -Name examplename -ResourceGroupName examplere
 ###Start the app gateway
 Start-AzApplicationGateway -ApplicationGateway $AppGw
 ```
+
 
   Click Save to store your script.
 
