@@ -1,0 +1,48 @@
+How to Create a Dynamic Group in Microsoft Entra ID (Azure AD)
+Prerequisites
+
+    You must have the appropriate administrative permissions in Azure AD to create and manage groups.
+
+Steps to Create a Dynamic Group
+1. Sign In to Azure Portal
+
+    Open a web browser and go to the Azure Portal.
+    Sign in with your admin account credentials.
+
+2. Navigate to Microsoft Entra ID
+
+    In the left-hand navigation pane, select Microsoft Entra ID.
+
+3. Create a New Group
+
+    In the Microsoft Entra ID pane, select Groups.
+    Click on + New group.
+
+4. Configure Group Settings
+
+    Group type: Select Security.
+    Group name: Enter a name for the group (e.g., "sales_users").
+    Group description: Optionally, enter a description for the group.
+    Membership type: Select Dynamic User.
+
+5. Define the Dynamic Membership Rules
+
+    Click on Add dynamic query.
+    In the Dynamic membership rules pane, you can create a rule based on user attributes. Here is an example of a rule:
+        To create a dynamic group for users in the Sales department and is a full time employee based on our account creation documentation:
+
+        (user.department -eq "Sales") and (user.employeeId -eq "full_time")
+
+6. Validate the Rule
+
+    Click Save to validate and apply the rule.
+    You can use the Validate rules button to test your rule with specific users or devices.
+
+7. Create the Group
+
+    Review the group settings and dynamic membership rules.
+    Click Create to create the dynamic group.
+
+Conclusion
+
+Following these steps will help you create a dynamic group in Microsoft Entra ID (Azure AD). The dynamic membership rules ensure that users or devices are automatically added or removed from the group based on the specified criteria.
