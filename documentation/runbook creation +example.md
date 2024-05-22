@@ -42,7 +42,7 @@ Steps to Create an Azure Runbook
     Use the editor to write your automation script. For example, a PowerShell Runbook might look like this:
 
     Powershell:
-   ```powershell
+ ```powershell
 ###This starts the example load balancer in an example subscription.###
 ###Connect to Azure
 Connect-AzAccount -Identity
