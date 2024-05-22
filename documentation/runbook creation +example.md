@@ -46,7 +46,7 @@ Steps to Create an Azure Runbook
 ###This starts the example load balancer in an example subscription.###
 ###Connect to Azure
 Connect-AzAccount -Identity
-###Select the Azure Subscription named app-example-001
+###Select the Azure Subscription named examplesubscription
 Select-AzSubscription -SubscriptionName ‘examplesubscription’
 ###Select the example application gateway
 $AppGw = Get-AzApplicationGateway -Name examplename -ResourceGroupName exampleresourcegroup
